@@ -2,10 +2,4 @@ streamlit
 numpy
 pandas
 plotly.graph_objects
-ast
-hashlib
-datetime
-time
-dataclasses
-typing
 PIL
