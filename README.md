@@ -3,7 +3,7 @@ This repository contains the research results from the Laboratory of Alternative
 
 The content here is the result of the Master’s Dissertation work of Luiz A. Tarralo Passatuto and is available for various uses, provided that the original work and its authors are credited.
 
-Here, readers can find Python scripts for optimizing overcurrent relay parameters for three IEEE test systems: 13-bus, 34-bus, and 37-bus networks.
+Here, readers can find Python scripts for optimizing overcurrent relay parameters using ARO metaheuristic for three IEEE test systems: 13-bus, 34-bus, and 37-bus networks.
 
 The OpenDSS models of these systems, along with the results obtained through the proposed methodology, are also included.
 
