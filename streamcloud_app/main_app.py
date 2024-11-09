@@ -120,13 +120,15 @@ def main():
             receiver = 'R' + str(selected_pair[0]) + ' - R' + str(selected_pair[1])
             prim_relay = relay_data[relay_data['Id'] == ('R' + str(selected_pair[0]))]
             prim_pickup = prim_relay['Ip_ph(P)'].values[0]
+            prim_pickup_rtc = prim_relay['Ip_ph(S)'].values[0]
             prim_tms = prim_relay['TMS'].values[0]
             prim_isc = prim_relay['Isc_max(P)'].values[0]
             sec_relay = relay_data[relay_data['Id'] == ('R' + str(selected_pair[1]))]
             sec_pickup = sec_relay['Ip_ph(P)'].values[0]
+            sec_pickup_rtc = sec_relay['Ip_ph(S)'].values[0]
             sec_tms = sec_relay['TMS'].values[0]
             sec_isc = sec_relay['Isc_max(P)'].values[0]
-            transaction_to_relay = f'Primary Pickup: {prim_pickup} A, Primary TMS: {prim_tms} s, Secondary Pickup: {sec_pickup} A, Secondary TMS: {sec_tms} s'
+            transaction_to_relay = f'Primary Pickup: {prim_pickup_rtc} A, Primary TMS: {prim_tms} s, Secondary Pickup: {sec_pickup_rtc} A, Secondary TMS: {sec_tms} s'
             current_step = st.number_input('Insert a step for the current curve 📏', 0.01, 10.0, 0.01) # the user insert the current multiplier
             if st.button('Mine Block'):
                 start_time = time.time() # start the time
