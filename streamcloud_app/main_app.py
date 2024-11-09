@@ -4,7 +4,7 @@ import streamlit as st, numpy as np, pandas as pd, plotly.graph_objects as go
 import ast, hashlib, datetime as datetime, time 
 from dataclasses import dataclass
 from typing import Any, List
-from PIL import Image
+from image_loader import render_image
 
 # First - Record Data Class
 # Create a record data class that consists of the 'sender' (user), 'receiver' (relay) and 'transaction' (relay data)
@@ -83,7 +83,6 @@ def main():
     blockchain = setup()
     col1, col2 = st.columns((2,1))
     col1.markdown("<span style='font-size: 22px;'><strong>:rainbow[ANSI 51 Plotter App] ⚡ + :rainbow[Blockchain Ledger] 🔗</strong></span>", unsafe_allow_html=True)
-    # col1.markdown('**:rainbow[ANSI 51 Plotter App]** ⚡ + **:rainbow[Blockchain Ledger]** 🔗')
     with col1.popover('**Made by** Luiz A. Tarralo Passatuto'):
         st.write('**Email** tarralo@ufu.br') 
         st.markdown('[GitHub](https://github.com/tarralo)')
@@ -99,7 +98,6 @@ def main():
         st.markdown('[ResearchGate](https://www.researchgate.net/profile/Wellington-Maycon-S-Bernardes)')
     col1.markdown('[GitHub Repository](https://github.com/tarralo/ansi51_blockchain)')
     col1.write('**Last Update** 08 November 2024')
-    #leapse_logo = Image.open(r"leapse.png")
     col2.image("leapse.png", use_column_width='auto') 
     with col2.popover("**:green[Laboratory of Alternative Energies and Protection of Electrical Systems]**"):
         st.write('**Uberlândia, Brazil**')
@@ -107,11 +105,8 @@ def main():
         st.markdown('[Instagram](https://www.instagram.com/leapse.ufu/)')
     with st.popover("Supported by 👨‍🏫"):
         pop_col1, pop_col2, pop_col3 = st.columns(3, gap="large")
-        #capes_logo = Image.open(r"streamcloud_app/capes.png")
         pop_col1.image("capes.png", caption = "CAPES - Coordination for the Improvement of Higher Education Personnel", width=200)
-        #ufu_logo = Image.open(r"ufu.png")
         pop_col2.image("ufu.png", caption = "UFU - Federal University of Uberlândia", width=200)
-        #ppgeelt_logo = Image.open(r"ppgeelt.png")
         pop_col3.image("ppgeelt.png", caption = "PPGEELT - Post-Graduation Electrical Engineering Program", width=200) 
     uploaded_file = st.file_uploader('Choose a .csv file with relay data', accept_multiple_files=False, type='csv') # the user insert the .csv file with the relay data
     if uploaded_file is not None:
@@ -169,7 +164,6 @@ def main():
                     st.plotly_chart(fig, use_container_width=False) # show the plot
                     st.write(":green[_Block Mined Successfully_] ⛏️") # print the message
                     st.write(f"**In** :blue[{new_block.nonce}] **attempts and** :red[{time.time() - start_time:.4f}] **seconds**") # print the number of attempts and the time 
-
     st.markdown(":violet[**Blockchain Ledger**] 📓")
     blockchain_df = pd.DataFrame(blockchain.chain)
     st.write(blockchain_df)
