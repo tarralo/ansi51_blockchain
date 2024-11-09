@@ -98,7 +98,8 @@ def main():
         st.markdown('[ResearchGate](https://www.researchgate.net/profile/Wellington-Maycon-S-Bernardes)')
     col1.markdown('[GitHub Repository](https://github.com/tarralo/ansi51_blockchain)')
     col1.write('**Last Update** 08 November 2024')
-    render_image("streamcloud_app/leapse.png") 
+    leapse_logo = render_image("streamcloud_app/leapse.png") 
+    col2.image(leapse_logo, use_column_width='auto')
     with col2.popover("**:green[Laboratory of Alternative Energies and Protection of Electrical Systems]**"):
         st.write('**Uberlândia, Brazil**')
         st.markdown('[LinkedIn](https://www.linkedin.com/company/leapse-ufu/)')
