@@ -4,7 +4,7 @@ import streamlit as st, numpy as np, pandas as pd, plotly.graph_objects as go
 import ast, hashlib, datetime as datetime, time 
 from dataclasses import dataclass
 from typing import Any, List
-from image_loader import render_image
+from PIL import Image
 
 # First - Record Data Class
 # Create a record data class that consists of the 'sender' (user), 'receiver' (relay) and 'transaction' (relay data)
@@ -98,7 +98,7 @@ def main():
         st.markdown('[ResearchGate](https://www.researchgate.net/profile/Wellington-Maycon-S-Bernardes)')
     col1.markdown('[GitHub Repository](https://github.com/tarralo/ansi51_blockchain)')
     col1.write('**Last Update** 08 November 2024')
-    leapse_logo = render_image("streamcloud_app/leapse.png") 
+    leapse_logo = Image.open("leapse.png") 
     col2.image(leapse_logo, use_column_width='auto')
     with col2.popover("**:green[Laboratory of Alternative Energies and Protection of Electrical Systems]**"):
         st.write('**Uberlândia, Brazil**')
