@@ -104,7 +104,7 @@ def main():
         st.write('**Uberlândia, Brazil**')
         st.markdown('[LinkedIn](https://www.linkedin.com/company/leapse-ufu/)')
         st.markdown('[Instagram](https://www.instagram.com/leapse.ufu/)')
-    with st.popover("Supported by 👨‍🏫"):
+    with col1.popover("Supported by 👨‍🏫"):
         pop_col1, pop_col2, pop_col3 = st.columns(3, gap="large")
         pop_col1.image("capes.png", caption = "CAPES - Coordination for the Improvement of Higher Education Personnel", width=200)
         pop_col2.image("ufu.png", caption = "UFU - Federal University of Uberlândia", width=200)
