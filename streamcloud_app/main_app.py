@@ -99,16 +99,16 @@ def main():
     col1.markdown('[GitHub Repository](https://github.com/tarralo/ansi51_blockchain)')
     col1.write('**Last Update** 08 November 2024')
     leapse_logo = Image.open("leapse.png") 
-    col2.image(leapse_logo, use_column_width='auto')
+    #col2.image(leapse_logo, use_column_width='auto')
     with col2.popover("**:green[Laboratory of Alternative Energies and Protection of Electrical Systems]**"):
         st.write('**Uberlândia, Brazil**')
         st.markdown('[LinkedIn](https://www.linkedin.com/company/leapse-ufu/)')
         st.markdown('[Instagram](https://www.instagram.com/leapse.ufu/)')
-    with st.popover("Supported by 👨‍🏫"):
+    '''with st.popover("Supported by 👨‍🏫"):
         pop_col1, pop_col2, pop_col3 = st.columns(3, gap="large")
         pop_col1.image("capes.png", caption = "CAPES - Coordination for the Improvement of Higher Education Personnel", width=200)
         pop_col2.image("ufu.png", caption = "UFU - Federal University of Uberlândia", width=200)
-        pop_col3.image("ppgeelt.png", caption = "PPGEELT - Post-Graduation Electrical Engineering Program", width=200) 
+        pop_col3.image("ppgeelt.png", caption = "PPGEELT - Post-Graduation Electrical Engineering Program", width=200) '''
     uploaded_file = st.file_uploader('Choose a .csv file with relay data', accept_multiple_files=False, type='csv') # the user insert the .csv file with the relay data
     if uploaded_file is not None:
         try: relay_data = pd.read_csv(uploaded_file, encoding='utf-8', sep=';', decimal=',') # read the .csv file
