@@ -82,7 +82,7 @@ def main():
     check = False # check if the block was mined
     blockchain = setup()
     col1, col2 = st.columns((2,1))
-    col1.markdown("<span style='font-size: 22px;'><strong>:rainbow[ANSI 51 Plotter App] ⚡ + :rainbow[Blockchain Ledger] 🔗</strong></span>", unsafe_allow_html=True)
+    col1.markdown("<span style='font-size: 22px;'><strong>:blue[ANSI 51 Plotter App] ⚡ + :blue[Blockchain Ledger] 🔗</strong></span>", unsafe_allow_html=True)
     with col1.popover('**Made by** Luiz A. Tarralo Passatuto'):
         st.write('**Email** tarralo@ufu.br') 
         st.markdown('[GitHub](https://github.com/tarralo)')
