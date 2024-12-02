@@ -57,7 +57,7 @@ This work was supported by the Fundação de Amparo à Pesquisa do Estado de Min
 ## Screenshots
 
 <p align="center">
-<img src="https://github.com/tarralo/ansi51_blockchain/blob/3174b8ac57e2566247ee4558f9dade6b7bb66714/models_and_results/app_tela_inicial.jpg">
+<img src="https://github.com/tarralo/ansi51_blockchain/blob/bcbd45feefec24719c2d26f1533469a6b7b77ac5/models_and_results/app_tela_inicial.jpg">
   <figcaption>Home screen of the web application.</figcaption>
 </p>
 
