@@ -1,6 +1,6 @@
-py_dss_interface
-pandas
-numpy
-matplotlib.pyplot
-mealpy
-mpl_toolkits.axes_grid1.inset_locator
+py_dss_interface==2.0.4
+pandas==2.2.1
+numpy==1.26.4
+matplotlib==3.8.4
+mealpy==3.0.1
+
