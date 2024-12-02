@@ -105,10 +105,11 @@ def main():
         st.markdown('[LinkedIn](https://www.linkedin.com/company/leapse-ufu/)')
         st.markdown('[Instagram](https://www.instagram.com/leapse.ufu/)')
     with col1.popover("Supported by 👨‍🏫"):
-        pop_col1, pop_col2, pop_col3 = st.columns(3, gap="large")
-        pop_col1.image("capes.png", caption = "CAPES - Coordination for the Improvement of Higher Education Personnel", width=200)
-        pop_col2.image("ufu.png", caption = "UFU - Federal University of Uberlândia", width=200)
-        pop_col3.image("ppgeelt.png", caption = "PPGEELT - Post-Graduation Electrical Engineering Program", width=250) 
+        pop_col1, pop_col2, pop_col3, pop_col4 = st.columns(4, gap="large")
+        pop_col1.image("ufu.png", caption = "UFU - Federal University of Uberlândia", width=100)
+        pop_col2.image("ppgeelt.png", caption = "PPGEELT - Post-Graduation Electrical Engineering Program", width=100) 
+        pop_col3.image("capes.png", caption = "CAPES - Coordination for the Improvement of Higher Education Personnel", width=100)
+        pop_col4.image("fapemig.png", caption = "FAPEMIG - Minas Gerais Research Funding Foundation", width=100)
     uploaded_file = st.file_uploader('Choose a .csv file with relay data', accept_multiple_files=False, type='csv') # the user insert the .csv file with the relay data
     if uploaded_file is not None:
         try: relay_data = pd.read_csv(uploaded_file, encoding='utf-8', sep=';', decimal=',') # read the .csv file
