@@ -4,7 +4,7 @@ This repository contains the research results from the Laboratory of Alternative
 
 ## Published Papers 
 
-> Inserir referência do artigo do CBRED assim que a tiver
+> PASSATUTO, Luiz Arthur Tarralo; BERNARDES, Wellington Maycon Santos. Coordenação Inovadora de Relés Direcionais de Sobrecorrente com ARO e Blockchain. **_In_**: **1ª Conferência Brasileira Sobre Recursos Energéticos Distribuídos (CBRED)**. Uberlândia, Brazil, 2024. Anais eletrônicos... Campinas: Galoá. Disponível em: [Proceedings CBRED 2024](https://proceedings.science/cbred-2024/trabalhos/coordenacao-inovadora-de-reles-direcionais-de-sobrecorrente-com-aro-e-blockchain?lang=pt-br)
 
 > Inserir referência da Dissertação assim que a tiver
 
