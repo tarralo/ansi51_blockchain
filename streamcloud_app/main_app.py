@@ -100,7 +100,7 @@ def main():
     col1.write('**Last Update** 08 November 2024')
     leapse_logo = Image.open("leapse.png") 
     col2.image(leapse_logo, use_column_width='auto')
-    with col2.popover("**:green[Laboratory of Alternative Energies and Protection of Electrical Systems]**"):
+    with col2.popover("**:green[Laboratory of Alternative Energies and Power System Protection]**"):
         st.write('**Uberlândia, Brazil**')
         st.markdown('[LinkedIn](https://www.linkedin.com/company/leapse-ufu/)')
         st.markdown('[Instagram](https://www.instagram.com/leapse.ufu/)')
