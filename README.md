@@ -2,7 +2,7 @@
 
 This repository contains the research results from the Laboratory of Alternative Energies and Electrical System Protection, conducted by Eng. Luiz A. Tarralo Passatuto ([tarralo](https://github.com/tarralo)) under the guidance of Prof. Phd. Wellington Maycon S. Bernardes ([wmsb](https://github.com/wmsb)). This study contributes for fault analysis using [**OpenDSS**](https://www.epri.com/pages/sa/opendss) , optimal parameters for overcurrent relay via [**Artificial Rabbit Optimization**](https://seyedalimirjalili.com/aro) metaheuristic and processing data via **Blockchain**. The content here is the result of the Master’s Dissertation work of Luiz A. Tarralo Passatuto and is available for various uses, provided that the original work and its authors are credited.
 
-## Published Papers 
+## How to cite
 
 > PASSATUTO, Luiz Arthur Tarralo; BERNARDES, Wellington Maycon Santos. Coordenação Inovadora de Relés Direcionais de Sobrecorrente com ARO e Blockchain. **_In_**: **1ª Conferência Brasileira Sobre Recursos Energéticos Distribuídos (CBRED)**. Uberlândia, Brazil, 2024. Anais eletrônicos... Campinas: Galoá. Avaiable in: https://proceedings.science/cbred-2024/trabalhos/coordenacao-inovadora-de-reles-direcionais-de-sobrecorrente-com-aro-e-blockchain?lang=pt-br
 
