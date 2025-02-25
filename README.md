@@ -4,9 +4,9 @@ This repository contains the research results from the Laboratory of Alternative
 
 ## Published Papers 
 
-> PASSATUTO, Luiz Arthur Tarralo; BERNARDES, Wellington Maycon Santos. Coordenação Inovadora de Relés Direcionais de Sobrecorrente com ARO e Blockchain. **_In_**: **1ª Conferência Brasileira Sobre Recursos Energéticos Distribuídos (CBRED)**. Uberlândia, Brazil, 2024. Anais eletrônicos... Campinas: Galoá. Disponível em: [Proceedings CBRED 2024](https://proceedings.science/cbred-2024/trabalhos/coordenacao-inovadora-de-reles-direcionais-de-sobrecorrente-com-aro-e-blockchain?lang=pt-br)
+> PASSATUTO, Luiz Arthur Tarralo; BERNARDES, Wellington Maycon Santos. Coordenação Inovadora de Relés Direcionais de Sobrecorrente com ARO e Blockchain. **_In_**: **1ª Conferência Brasileira Sobre Recursos Energéticos Distribuídos (CBRED)**. Uberlândia, Brazil, 2024. Anais eletrônicos... Campinas: Galoá. Avaiable in: https://proceedings.science/cbred-2024/trabalhos/coordenacao-inovadora-de-reles-direcionais-de-sobrecorrente-com-aro-e-blockchain?lang=pt-br
 
-> PASSATUTO, Luiz Arthur Tarralo. Coordenação Segura de Relés de Sobrecorrente usando Otimização por Coelhos Artificiais e Blockchain em Sistemas Elétricos com Recursos Energéticos Distribuídos. 2025. 175 p. Dissertação (Mestrado em Engenharia Elétrica) - Universidade Federal de Uberlândia, Uberlândia, 2025. DOI http://doi.org/10.14393/ufu.di.2025.3.
+> PASSATUTO, Luiz Arthur Tarralo. Coordenação Segura de Relés de Sobrecorrente usando Otimização por Coelhos Artificiais e Blockchain em Sistemas Elétricos com Recursos Energéticos Distribuídos. 2025. 175 p. Dissertação (Mestrado em Engenharia Elétrica) - Universidade Federal de Uberlândia, Uberlândia, 2025. DOI http://doi.org/10.14393/ufu.di.2025.3. Avaiable in: https://repositorio.ufu.br/handle/123456789/44919
 
 ## Relay Configuration ('ARO_optimization_....py')
 This script is responsible for configuring the settings of overcurrent relays in an electrical protection system based on fault data  and current values from the system (via [**py-dss-interface**](https://pypi.org/project/py-dss-interface/)). The main parameters computed include:
