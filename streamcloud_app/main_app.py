@@ -74,7 +74,7 @@ class Blockchain:
         return True
 
 # Fourth - Setup for streamlit
-@st.cache_resource(experimental_allow_widgets=True)
+@st.cache_resource()
 def setup(): return Blockchain([Block("Genesis", 0)])
     
 # Fifth - Main Function
